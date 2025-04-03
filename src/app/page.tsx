@@ -1,103 +1,106 @@
-import Image from "next/image";
+'use client';
+
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+import { ArrowRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
+import ProjectCarousel from './components/ProjectCarousel';
+import StatsStrip from './components/StatsStrip';
+import Leaders from './components/Leaders';
+import ExpertiseAreas from './components/ExpertiseAreas';
+import Contact from './components/Contact';
+import FeaturedProjects from './components/FeaturedProjects';
+
+const featuredProjects = [
+  {
+    id: 1,
+    title: 'Modern Urban Living',
+    description: 'Contemporary residential complex with sustainable features',
+    image: '/projects/project1.jpg',
+    category: 'Residential',
+  },
+  {
+    id: 2,
+    title: 'Corporate Headquarters',
+    description: 'State-of-the-art office building with innovative design',
+    image: '/projects/project2.jpg',
+    category: 'Commercial',
+  },
+  {
+    id: 3,
+    title: 'Cultural Center',
+    description: 'Multi-purpose venue celebrating arts and community',
+    image: '/projects/project3.jpg',
+    category: 'Cultural',
+  },
+];
+
+const stats = [
+  { id: 1, value: '5', label: 'Decades' },
+  { id: 2, value: '22', label: 'States' },
+  { id: 3, value: '3', label: 'Continents' },
+  { id: 4, value: '4500', label: 'Employees' },
+  { id: 5, value: '850M', label: 'USD Revenue' },
+  { id: 6, value: '2000', label: 'Fleet machinery' },
+  { id: 7, value: 'AA', label: 'care rating' },
+];
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects');
+    projectsSection?.scrollIntoView({ behavior: 'smooth' });
+  };
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+  return (
+    <main className="min-h-screen">
+      <ProjectCarousel />
+      <div className='w-full overflow-hidden bg-[#e6e6f7]'>
+        <StatsStrip />
+      </div>
+            {/* Description Section */}
+      <section className="md:mt-[-25px] pt-[40px] md:pt-[0px] px-[0px] md:px-[80px] lg:px-[100px] ">
+        <div className="">
+          <div className="grid md:grid-cols-2 md:gap-[200px] gap-[40px] items-center">
+            <div className="w-full order-2 md:order-1">
+              <Image
+                src="/images/careers-team.png"
+                alt="Our team"
+                width={500}
+                height={500}
+                className="object-contain"
+              />
+            </div>
+            <div className='px-[20px] md:px-[0px] flex flex-col gap-[40px] order-1 md:order-2'>
+              <h2 className="text-[32px] leading-[1.1] text-[#252525] font-medium ">
+              They say the future is unknown, but we say, No. 
+              Future is yet to be shaped. It is yet to become real.               </h2>
+              <p className="text-[#252525] text-[14px] leading-[1.1]">
+              For it is nothing but our will and determination that manifests into a reality.</p>
+              <button
+                  type="submit"
+                  className="bg-gradient-to-r from-[#6F00D9] to-[#0504AA] text-white px-[24px] py-[14px] flex items-center gap-2 w-fit font-medium transition-colors"
+                >
+                  EXPLORE
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14m-7-7l7 7-7 7" />
+                  </svg>
+                </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      {/* Featured Projects */}
+      <FeaturedProjects />
+
+      {/* Leaders Section */}
+      <Leaders />
+
+      {/* Expertise Areas Section */}
+      <ExpertiseAreas />
+
+      {/* Contact Sections */}
+      <Contact />
+    </main>
   );
 }
