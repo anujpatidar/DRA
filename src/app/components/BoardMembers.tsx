@@ -168,7 +168,7 @@ export default function BoardMembers() {
       
               </div>
               <div className="text-left flex flex-col gap-2">
-                <h3 className="text-[20px] leading-[120%] font-semibold text-black">{member.name}</h3>
+                <h3 className="text-[20px] uppercase font-gotham leading-[120%] font-semibold text-black">{member.name}</h3>
                 <p className="text-gray-600 text-[14px] font-medium mb-2">{member.position}</p>
               </div>
             </motion.div>

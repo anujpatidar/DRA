@@ -90,7 +90,7 @@ export default function Leaders({
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="text-left flex flex-col gap-2">
-                <h3 className="text-[20px] leading-[120%] font-semibold text-white">{leader.name}</h3>
+                <h3 className="text-[20px] leading-[120%] uppercase font-gotham font-semibold text-white">{leader.name}</h3>
                 <p className="text-white text-[14px] font-medium mb-2">{leader.position}</p>
               </div>
             </motion.div>
