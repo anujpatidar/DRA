@@ -53,7 +53,7 @@ export default function Company() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[32px] text-white font-bold leading-tight max-w-[600px]"
+            className="text-[32px] text-white font-gotham font-medium leading-tight max-w-[600px]"
           >
             Our Leaders - Ones who guide us to become better and transform the world
           </motion.h1>

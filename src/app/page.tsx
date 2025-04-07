@@ -72,7 +72,7 @@ export default function Home() {
               />
             </div>
             <div className='px-[20px] md:px-[0px] flex flex-col gap-[40px] order-1 md:order-2'>
-              <h2 className="text-[32px] leading-[1.1] text-[#252525] font-medium ">
+              <h2 className="text-[32px] leading-[1.1] text-[#252525] font-normal">
               They say the future is unknown, but we say, No. 
               Future is yet to be shaped. It is yet to become real.               </h2>
               <p className="text-[#252525] text-[14px] leading-[1.1]">

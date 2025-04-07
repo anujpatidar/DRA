@@ -24,7 +24,7 @@ export default function ProjectDetail({ params }: { params: { slug: string } }) 
         />
         <div className="absolute inset-0 ">
           <div className="container mx-auto px-6 h-full flex flex-col justify-end pb-20">
-            <h1 className="text-white w-full break-words uppercase text-6xl font-bold max-w-2xl mb-4">
+            <h1 className="text-white w-full break-words uppercase text-[42px] leading-[1.2] font-bold font-druk max-w-2xl mb-4">
               {project.title}
             </h1>
             <h2 className="text-white text-2xl">

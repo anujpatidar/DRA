@@ -52,11 +52,12 @@ const ProfilePopup = ({ member, onClose }: ProfilePopupProps) => {
   if (!member) return null;
 
   return (
+    <div className='fixed md:absolute inset-0 bg-black/50 z-50 md:bg-transparent'>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed left-0 bottom-0 rounded-t-[20px] md:rounded-t-none md:absolute w-full md:h-[100%] h-fit bg-[#E7E7E9] z-50 overflow-hidden"
+      className="fixed left-0 bottom-0 rounded-t-[20px] md:rounded-t-none md:absolute w-full md:h-[100%] h-fit bg-[#ffffff] z-50 overflow-hidden"
       onClick={onClose}
     >
       <motion.div
@@ -91,13 +92,17 @@ const ProfilePopup = ({ member, onClose }: ProfilePopupProps) => {
             />
           </div>
           <div className="flex flex-col md:p-[20px] items-start justify-center md:gap-4 gap-[14px]">
-            <h3 className="md:text-[24px] text-[20px] leading-1 font-bold">{member.name}</h3>
-            <p className="text-[#5F00D9] md:text-[16px] text-[14px] font-medium">{member.position}</p>
+            <div>
+            <h3 className="md:text-[24px] text-[20px] uppercase font-gotham leading-1 font-medium">{member.name}</h3>
+            <p className="text-[#252525] md:text-[16px] text-[14px] font-medium">{member.position}</p>
+            </div>
+     
             <p className="text-gray-600 md:leading-[1.8] leading-1">{member.description}</p>
           </div>
         </div>
       </motion.div>
     </motion.div>
+    </div>
   );
 };
 
@@ -113,10 +118,10 @@ export default function BoardMembers() {
           viewport={{ once: true }}
           className="text-left flex flex-col gap-2 mb-8"
         >
-          <h2 className="text-[32px] font-bold leading-[1.1] text-black">
+          <h2 className="text-[32px] font-medium leading-[1.1] text-black">
             Board of Members
           </h2>
-          <p className="text-[14px] leading-[1.5] pr-[20px] text-gray-600">
+          <p className="text-[14px] leading-[1.2] pr-[20px] text-[#7b7b7b]">
             The ones who guide us to become better and transform the world
           </p>
         </motion.div>
@@ -222,8 +227,8 @@ export default function BoardMembers() {
                 </div>
 
       
-                <div className="text-left">
-                  <h3 className="text-[20px] font-bold text-black mb-1">{member.name}</h3>
+                <div className="text-left w-[280px]">
+                  <h3 className="text-[20px] uppercase font-medium font-gotham text-black mb-1">{member.name}</h3>
                   <p className="text-gray-600 text-[14px]">{member.position}</p>
                 </div>
               </motion.div>

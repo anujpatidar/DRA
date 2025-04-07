@@ -61,10 +61,10 @@ export default function Leaders({
           viewport={{ once: true }}
           className="text-left flex flex-col gap-2 mb-8"
         >
-          <h2 className={`text-[32px] font-bold leading-[1.1] ${!removeBackground ? 'text-white' : 'text-black'}`}>
+          <h2 className={`text-[32px] font-medium leading-[1.1] ${!removeBackground ? 'text-white' : 'text-black'}`}>
             {title}
           </h2>
-          <p className={`text-[14px] leading-[1.5] pr-[20px] ${!removeBackground ? 'text-white/80' : 'text-gray-600'}`}>
+          <p className={`text-[14px] leading-[1.2] pr-[20px] ${!removeBackground ? 'text-white/80' : 'text-gray-600'}`}>
             The ones who guide us to become better and transform the world
           </p>
         </motion.div>
@@ -108,7 +108,7 @@ export default function Leaders({
                 viewport={{ once: true }}
                 className="snap-start flex-none"
               >
-                <div className="relative w-[280px] h-[340px] mb-4 overflow-hidden rounded-[16px] bg-white">
+                <div className="relative w-[280px] h-[340px] mb-4 overflow-hidden bg-white">
                   <Image
                     src={leader.image}
                     alt={leader.name}
@@ -116,8 +116,8 @@ export default function Leaders({
                     className="object-cover object-top"
                   />
                 </div>
-                <div className="text-left">
-                  <h3 className="text-[20px] font-bold text-white mb-1">{leader.name}</h3>
+                <div className="text-left w-[280px]">
+                  <h3 className="text-[20px] font-bold uppercase text-white mb-1">{leader.name}</h3>
                   <p className="text-white/80 text-[14px]">{leader.position}</p>
                 </div>
               </motion.div>

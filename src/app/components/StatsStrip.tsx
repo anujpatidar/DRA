@@ -76,7 +76,7 @@ export default function StatsStrip() {
         {stats.map((stat, index) => (
           <div key={`set3-${index}`} className="stats-item">
             <div className="text-center">
-              <div className="text-[32px] font-bold text-[#252525]">
+              <div className="text-[32px] font-medium text-[#252525]">
                 {stat.number}
               </div>
               <div className="text-[14px] text-[#252525]">

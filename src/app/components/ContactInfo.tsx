@@ -86,20 +86,20 @@ export default function ContactInfo() {
             }}
           />
           <div className="relative z-10">
-            <h3 className="text-[32px] leading-[1.1] font-bold mb-[32px]">Contact</h3>
+            <h3 className="md:text-[32px] text-[20px] leading-[1.1] font-medium mb-[32px]">Contact</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-[24px]">
               <div>
-                <h4 className="text-[14px] font-medium leading-[1.1] mb-[10px]">PHONE</h4>
-                <p className="text-[20px] leading-[1.1] mb-[6px]">079-26309765</p>
-                <p className="text-[20px] leading-[1.1]">079-26309765</p>
+                <h4 className="text-[14px] text-[#E4DEFF] font-medium leading-[1.1] mb-[10px]">PHONE</h4>
+                <p className="md:text-[20px] text-[16px] leading-[1.1] mb-[6px]">079-26309765</p>
+                <p className="md:text-[20px] text-[16px] leading-[1.1]">079-26309765</p>
               </div>
               <div className="md:col-span-2">
-                <h4 className="text-[14px] font-medium leading-[1.1] mb-[10px]">ADDRESS</h4>
-                <p className="text-[20px]">401, The Grand Mall, S.M. Road, Ambawadi,<br />Ahmedabad-380015 (Gujarat, India)</p>
+                <h4 className="text-[14px] text-[#E4DEFF] font-medium leading-[1.1] mb-[10px]">ADDRESS</h4>
+                <p className="md:text-[20px] text-[16px] leading-[1.1]">401, The Grand Mall, S.M. Road, Ambawadi,<br />Ahmedabad-380015 (Gujarat, India)</p>
               </div>
               <div>
-                <h4 className="text-[14px] font-medium leading-[1.1] mb-[10px]">E-MAIL</h4>
-                <p className="text-[20px] leading-[1.1]">info@draipl.com</p>
+                <h4 className="text-[14px] text-[#E4DEFF] font-medium leading-[1.1] mb-[10px]">E-MAIL</h4>
+                <p className="md:text-[20px] text-[16px] leading-[1.1]">info@draipl.com</p>
               </div>
             </div>
           </div>

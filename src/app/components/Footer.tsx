@@ -41,7 +41,7 @@ export default function Footer() {
           <p className="text-sm">
             COPYRIGHT © 2017, DINESHCHANDRA R. AGRAWAL INFRACON PVT. LTD. ALL RIGHTS RESERVED.
           </p>
-          <div className="flex items-center gap-8">
+          <div className="flex w-full justify-between md:justify-center md:w-auto items-center gap-8">
             <Link href="/privacy" className="text-sm hover:text-gray-200">
               PRIVACY
             </Link>

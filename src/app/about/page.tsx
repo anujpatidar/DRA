@@ -42,7 +42,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[32px] text-white font-bold leading-tight max-w-[600px]"
+            className="text-[32px] text-white font-medium leading-tight max-w-[600px]"
           >
             We are 'Dineshchandra R. Agrawal Infracon Pvt. Ltd.'
           </motion.h1>
@@ -62,7 +62,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[#252525] text-[14px] leading-auto mb-[20px]"
+            className="text-[#252525] text-[14px]  leading-auto mb-[20px]"
           >
             We are helping shape and redefine India's infrastructure sector, with a remarkable legacy that traces back to 1972. Over the past five decades, we have not only driven significant infrastructural advancements but have also contributed to the socio-economic landscape of the country. With a vision for a developed yet sustainable future, our projects prioritize environmental consciousness while delivering excellence.
           </motion.p>
@@ -84,14 +84,14 @@ export default function About() {
             </div>
             <div className="w-full  flex flex-col gap-[40px]">
               <div className='flex flex-col gap-[24px]'>
-              <h2 className="text-[32px] leading-[1] font-bold text-[#000000]">Our Purpose</h2>
+              <h2 className="text-[32px] leading-[1] font-medium text-[#000000]">Our Purpose</h2>
               <p className="text-[14px] text-[#000000] font-medium">
                 Creating a blend of innovation and responsibility
               </p>
               </div>
 
               <div className="flex flex-col ">
-                <p className="text-[14px] text-[#252525] leading-auto">
+                <p className="text-[14px] text-[#252525] leading-[1.2]">
                   We, as a company, have dedicated ourselves to Integrity, Commitment to Quality, Striving for Excellence, Diligence for Safety, Punctual deliveries of projects, Consumer Satisfaction
                   <br/><br/>
                   And while doing all of this, we try to stay true to our promise of sustainability by focusing the results that benefit the nature and the nation.
@@ -113,14 +113,14 @@ export default function About() {
             </div>
             <div className="w-full flex flex-col gap-[40px]">
               <div className='flex flex-col gap-[24px]'>
-              <h2 className="text-[32px] leading-[1] font-bold text-[#000000]">Our Beliefs</h2>
+              <h2 className="text-[32px] leading-[1] font-medium text-[#000000]">Our Beliefs</h2>
               <p className="text-[14px] text-[#000000] font-medium">
               Defining our journey towards the future
               </p>
               </div>
 
               <div className="flex flex-col ">
-                <p className="text-[14px] text-[#252525] leading-auto">
+                <p className="text-[14px] text-[#252525] leading-[1.2]">
                 In achieving our vision 'to become a leading global flagship company in the infrastructure sector' we are guided by principles that keep us on our path.
                 <br/><br/>
                 We are passionate about 'our people', 'our process' and 'our products'. We believe in building lasting relationships for a stronger future. We embrace collaboration, and create space for equal opportunities, nurturing talent, and growth. We uphold our ethics while creating impressions around the world
@@ -137,24 +137,24 @@ export default function About() {
       {/* Awards and Accolades Section */}
       <section className="relative">
         {/* Purple Gradient Header with SVG Background */}
-        <div className="relative bg-gradient-to-r from-[#6F00D9] to-[#0504AA] py-[40px] px-[20px] md:px-[80px] lg:px-[100px]">
+        <div className="relative overflow-hidden bg-gradient-to-r from-[#6F00D9] to-[#0504AA] py-[40px] px-[20px] md:px-[80px] lg:px-[100px]">
           {/* SVG Background Pattern */}
           <div 
             className="absolute inset-0 w-full h-full"
             style={{
               backgroundImage: 'url("/images/frame-36.svg")',
               backgroundSize: '100%',
-              backgroundPosition: 'start',
+              backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               mixBlendMode: 'overlay',
-              opacity:1,
-              transform: ' scale(1)'
+              opacity:2,
+              transform: ' scale(2.5)'
             }}
           />
           
           {/* Content */}
           <div className="relative z-10">
-            <h2 className="text-[32px] font-bold text-white">Awards and Accolades</h2>
+            <h2 className="md:text-[32px] text-[30px] font-medium text-white">Awards and Accolades</h2>
           </div>
         </div>
 

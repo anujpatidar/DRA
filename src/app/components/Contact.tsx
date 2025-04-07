@@ -68,7 +68,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-[32px] font-bold leading-[1.1]"
+              className="text-[32px] font-medium leading-[1.1]"
             >
               <span>Any Questions,</span><br />
               <span>We are here</span>
@@ -77,7 +77,7 @@ export default function Contact() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="text-gray-600 mt-4"
+              className="text-[#7b7b7b] leading-[1.2] mt-4"
             >
               Drop your details below, and we'll be in touch ASAP.
             </motion.p>
@@ -96,18 +96,18 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Name"
-                className="w-full px-4 py-3 font-medium bg-white border border-gray-200 focus:outline-none "
+                className="w-full px-4 py-3 font-normal bg-white border border-gray-200 focus:outline-none "
               />
               <input
                 type="email"
                 placeholder="Email ID"
-                className="w-full px-4 py-3 font-medium bg-white border border-gray-200 focus:outline-none"
+                className="w-full px-4 py-3 font-normal bg-white border border-gray-200 focus:outline-none"
               />
             </div>
             <textarea
               placeholder="Query"
               rows={4}
-              className="w-full px-4 py-3 font-medium bg-white border border-gray-200 focus:outline-none"
+              className="w-full px-4 py-3 font-normal bg-white border border-gray-200 focus:outline-none"
             />
             <button
               type="submit"
@@ -148,20 +148,20 @@ export default function Contact() {
                 }}
               />
               <div className="relative z-10">
-                <h3 className="text-[32px] leading-[1.1] font-bold mb-[32px]">Contact</h3>
+                <h3 className="md:text-[32px] text-[20px] leading-[1.1] font-medium mb-[32px]">Contact</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-[24px]">
                   <div>
-                    <h4 className="text-[14px] font-medium leading-[1.1] mb-[10px]">PHONE</h4>
-                    <p className="text-[20px] leading-[1.1] mb-[6px]">079-26309765</p>
-                    <p className="text-[20px] leading-[1.1]">079-26309765</p>
+                    <h4 className="text-[14px] text-[#E4DEFF] font-medium leading-[1.1] mb-[10px]">PHONE</h4>
+                    <p className="md:text-[20px] text-[16px] leading-[1.1] mb-[6px]">079-26309765</p>
+                    <p className="md:text-[20px] text-[16px] leading-[1.1]">079-26309765</p>
                   </div>
                   <div className="md:col-span-2">
-                    <h4 className="text-[14px] font-medium leading-[1.1] mb-[10px]">ADDRESS</h4>
-                    <p className="text-[20px]">401, The Grand Mall, S.M. Road, Ambawadi,<br />Ahmedabad-380015 (Gujarat, India)</p>
+                    <h4 className="text-[14px] text-[#E4DEFF] font-medium leading-[1.1] mb-[10px]">ADDRESS</h4>
+                    <p className="md:text-[20px] text-[16px] leading-[1.1]">401, The Grand Mall, S.M. Road, Ambawadi,<br />Ahmedabad-380015 (Gujarat, India)</p>
                   </div>
                   <div>
-                    <h4 className="text-[14px] font-medium leading-[1.1] mb-[10px]">E-MAIL</h4>
-                    <p className="text-[20px] leading-[1.1]">info@draipl.com</p>
+                    <h4 className="text-[14px] text-[#E4DEFF] font-medium leading-[1.1] mb-[10px]">E-MAIL</h4>
+                    <p className="md:text-[20px] text-[16px] leading-[1.1]">info@draipl.com</p>
                   </div>
                 </div>
               </div>

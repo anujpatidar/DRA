@@ -141,7 +141,7 @@ export default function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        className="block rounded-lg text-[32px] font-semibold leading-7 text-white hover:bg-[#c767fa] hover:text-white transition-all"
+                        className="block rounded-lg text-[32px] font-semibold leading-7 text-white transition-all"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {item.name}

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const NameDisplay: React.FC<{ title: string }> = ({ title }) => (
-  <h3 className="text-white text-base md:text-lg lg:text-xl font-semibold leading-tight">
+  <h3 className="text-white text-[14px] md:text-[20px]  font-medium leading-tight">
     {title.split(' ').map((part, i, arr) => (
       <React.Fragment key={i}>
         {part}
@@ -75,7 +75,7 @@ export default function ExpertiseAreas() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-[32px] md:text-[38px] lg:text-[42px] leading-[1.1] font-bold mb-8 md:mb-10 lg:mb-12"
+          className="text-[32px] md:text-[38px] lg:text-[42px] leading-[1.1] font-medium mb-8 md:mb-10 lg:mb-12"
         >
           <span className="md:hidden">
             Our Areas of<br />Expertise

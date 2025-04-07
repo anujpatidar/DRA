@@ -29,7 +29,7 @@ export const projectCategories = [
 
 export const projectsData: Record<string, ProjectDetails> = {
   'dnd-faridabad': {
-    title: "A PAVEMENT OF TRANSFORMATION",
+    title: "A Pavement of Transformation",
     subtitle: "DND - Faridabad - Sohna",
     period: "2022-24",
     description: `With seven kilometres of elevated structures, 1,450 piles driven deep into the earth, and 229 precast segments to be installed, the project was a feat of modern engineering. The widest single-cell segmental flyover in India—28.5 metres—rose majestically on a single pier. Its vertical upswing, growing on piers all along the stretch, promised to deliver the future.
@@ -117,7 +117,7 @@ This transformative project will significantly reduce travel time between Mumbai
     category: "Transportation"
   },
   'prayagraj-junction': {
-    title: "THE QUIET HUM OF PROGRESS",
+    title: "The Quiet Hum of Progress",
     subtitle: "Redeveloping Prayagraj Junction Railway Station",
     period: "2023-26",
     description: `A transformation was underway—a major upgrade designed to bring the station into a new era of efficiency, comfort, and sustainability. This ambitious project was not just about modernizing the station; it was a commitment to creating a 'Green Building' environment.
@@ -144,7 +144,7 @@ One of the project's proudest achievements was the creation of a fully accessibl
     category: "Transportation"
   },
   'ahmedabad-station': {
-    title: "TRANSFORMING THE HEART OF AHMEDABAD",
+    title: "Transforming the Heart of Ahmedabad",
     subtitle: "Ahmedabad Railway Station Redevelopment",
     period: "2023-26",
     description: `The plans for the redevelopment of the Ahmedabad Railway Station centered around a stunning Multi-Modal Transit Hub (MMTH)—a 16-floor skyscraper designed to house offices, hotels, retail spaces, and other commercial ventures. The iconic tower would not only enhance the skyline but seamlessly connect public transport, pedestrian access, and taxi services, all while offering ample parking.
@@ -172,7 +172,7 @@ With the clock ticking, the project team faced a tight 36-month timeline. Every 
     category: "Buildings and Highways"
   },
   'kota-sustainable': {
-    title: "CREATING A SUSTAINABLE FUTURE FOR KOTA",
+    title: "Creating a Sustainable Future for Kota",
     subtitle: "in a rapidly urbanising environment",
     period: "2019-23",
     description: `In Kota City, the ambitious plan to modernise sanitation system was centred around providing a comprehensive sewer network and state-of-the-art treatment facilities to handle the increasing waste demands.
@@ -200,7 +200,7 @@ A power generation unit was installed at the STP, emphasizing sustainability by 
     category: "Urban Infrastructure"
   },
   'chennai-metro': {
-    title: "THE UNDERGROUND ODYSSEY",
+    title: "The Underground Odyssey",
     subtitle: "Chennai Metro Rail Project",
     period: "2023-27",
     description: `In Chennai, a monumental project began: the construction of four underground metro stations at Moolakadai, Sembiyam, Perambur Market, and Perambur Metro as a part of Corridor 3 of the CMRL Phase-II Project.

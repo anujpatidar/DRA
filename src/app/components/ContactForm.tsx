@@ -11,10 +11,10 @@ export default function ContactForm() {
           <div className="grid md:grid-cols-2 md:gap-[60px] gap-[40px]">
             {/* Left Side - Contact Info */}
             <div>
-              <h1 className="text-[32px] leading-[1.1] font-bold mb-4">
+              <h1 className="text-[32px] leading-[1.1] font-medium mb-4">
                 Any Questions We are Here.
               </h1>
-              <p className="text-gray-600 mb-4">
+              <p className="text-[#7b7b7b] mb-4">
                 Drop your details below, and we'll be in touch ASAP.
               </p>
               
@@ -66,18 +66,18 @@ export default function ContactForm() {
                   <input
                     type="text"
                     placeholder="Name"
-                    className="bg-[#F3F1F8] font-medium px-4 py-3 outline-none border-none focus:border-none focus:ring-0"
+                    className="bg-[#F3F1F8] font-normal px-4 py-3 outline-none border-none focus:border-none focus:ring-0"
                   />
                   <input
                     type="email"
                     placeholder="Email ID"
-                    className="bg-[#F3F1F8] font-medium px-4 py-3 outline-none border-none focus:border-none focus:ring-0"
+                    className="bg-[#F3F1F8] font-normal px-4 py-3 outline-none border-none focus:border-none focus:ring-0"
                   />
                 </div>
                 <textarea
                   placeholder="Query"
                   rows={4}
-                  className="bg-[#F3F1F8] font-medium px-4 py-3 outline-none resize-none border-none focus:border-none focus:ring-0"
+                  className="bg-[#F3F1F8] font-normal px-4 py-3 outline-none resize-none border-none focus:border-none focus:ring-0"
                 />
                 <button
                   type="submit"

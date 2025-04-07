@@ -17,28 +17,28 @@ const projects: Project[] = [
     title: "A PAVEMENT OF TRANSFORMATION",
     subtitle: "DND - Faridabad - Sohna",
     description: "Spanning 24 kilometres, the six-lane highway was designed to connect DND Maharani Bagh to the Jaitpur-Pushta Road section of NH-148NA.",
-    image: "/projects/dnd-faridabad/dnd-hero.jpg",
+    image: "/projects/dnd-faridabad/dnd-1.jpg",
     url: "/projects/dnd-faridabad"
   },
   {
     title: "A Journey in the Making",
     subtitle: "The Mumbai-Ahmedabad High-Speed Rail",
     description: "A state-of-the-art metro rail system spanning major urban centers, enhancing connectivity and reducing travel time for millions.",
-    image: "/projects/mumbai-ahmedabad-rail/mumbai-ahmedabad-hero.jpg",
+    image: "/projects/mumbai-ahmedabad-rail/mumbai-ahmedabad-1.jpg",
     url: "/projects/mumbai-ahmedabad-rail"
   },
   {
     title: "The Global City Development",
     subtitle: "A Vision for Gurugram",
     description: "Comprehensive urban development project incorporating smart technologies and sustainable infrastructure solutions.",
-    image: "/projects/global-city-development/gurugram-hero.jpg",
+    image: "/projects/global-city-development/gurugram-1.jpg",
     url: "/projects/global-city-development"
   },
   {
     title: "The Underground Odyssey",
     subtitle: "Chennai Metro Rail Project",
     description: "An eco-friendly transportation corridor featuring dedicated lanes for electric vehicles and sustainable mobility solutions.",
-    image: "/projects/chennai-metro/chennai-hero.jpg",
+    image: "/projects/chennai-metro/chennai-1.jpg",
     url: "/projects/chennai-metro"
   }
 ]
@@ -91,13 +91,13 @@ export default function FeaturedProjects() {
             className="flex flex-col"
           >
             <div className="">
-              <h1 className="text-[32px] font-medium leading-[32px] mb-[14px]">
+              <h1 className="text-[32px] font-medium uppercase leading-[32px] mb-[14px]">
                 {projects[currentSlide].title}
               </h1>
               <h3 className="text-[20px] mb-[40px]">
                 {projects[currentSlide].subtitle}
               </h3>
-              <p className="text-[14px] mb-[40px]">
+              <p className="text-[14px] leading-[1.2] mb-[40px]">
                 {projects[currentSlide].description}
               </p>
             </div>
@@ -136,7 +136,7 @@ export default function FeaturedProjects() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
-            className="relative w-full md:h-[560px] h-[930px]"
+            className="relative w-full md:h-[560px] h-[800px]"
           >
             <Image
               src={projects[currentSlide].image}

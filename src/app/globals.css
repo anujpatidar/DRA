@@ -102,3 +102,8 @@
     @apply transition-transform duration-300 hover:-translate-y-1;
   }
 }
+
+/* Set Gotham as the default font */
+html, body {
+  font-family: 'Gotham', sans-serif;
+}

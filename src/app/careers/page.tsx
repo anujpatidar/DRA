@@ -322,7 +322,7 @@ export default function CareersPage() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-[32px] text-white font-bold leading-tight max-w-[600px]"
+            className="text-[32px] text-white font-medium leading-tight max-w-[600px]"
           >
            Join a Team That Makes a 
            Difference
